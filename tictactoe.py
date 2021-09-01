@@ -44,16 +44,9 @@ try:
     while True:
         if checkhorizontal(board, last_turn) or checkvertical(board, last_turn) or checkdiagonal(board, last_turn):
             cls()
-            #print(format(board))
-            #print(f"\x1b[1;31m     {last_turn} won! GG\x1b[1;0m")
-            #exit(0)
-            board = [
-                [" ", " ", " "],
-                [" ", " ", " "],
-                [" ", " ", " "]
-            ]
-            turn = "X"
-            last_turn = None
+            print(format(board))
+            print(f"\x1b[1;31m     {last_turn} won! GG\x1b[1;0m")
+            exit(0)
         print(format(board))
         GameOver = True
         for row in board:
